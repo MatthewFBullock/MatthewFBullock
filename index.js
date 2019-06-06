@@ -1,5 +1,7 @@
 // load our app server using express
 const express = require('express');
+var port = process.env.PORT || 8080;
+
 const app = express();
 
 // app.get("/", (req, res) => {
