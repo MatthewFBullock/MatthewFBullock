@@ -1,6 +1,6 @@
 // load our app server using express
 const express = require('express');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
@@ -20,5 +20,5 @@ app.use(express.static('public'));
 
 
 app.listen(PORT, () => {
-    console.log("Server is up and listening on ${PORT}...");
+    console.log("Server is up and listening on 8080...");
 });
