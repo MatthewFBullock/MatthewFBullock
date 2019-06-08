@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="/style.css" type="text/css" />
 	<!-- favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
 	
 	<!-- just in case viewer is using Internet Explorer -->
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -19,9 +21,10 @@
 <body>
 	
 	<!-- Header-->
-	<header>
+	<header class="container-header">
+		<img id="headshot" src="/img/Headshot.png" height="100%" width="auto">
 		<h1>Matthew Bullock</h1>
-		<p>Full Stack Software Developer</p>
+		<p>Professional Software Developer</p>
 	</header>
 	
 	<div class="container">
@@ -77,16 +80,63 @@
 	</div> <!-- End container-->
 	
 	<!-- Spotlight -->
-	<section class="spotlight">
+	<section class="spotlight-1">
+		<div class="container">
+			<div class="row">
+				<div class="grid-3">				
+					<video class="spotlight-video" autoplay width="320" height="240" loop muted>
+					<source src="img/OMpimQb.mp4" type="video/mp4">
+					Your browser does not support this video tag
+					</video>
+					<!-- <blockquote class="imgur-embed-pub" lang="en" data-id="OMpimQb"><a href="//imgur.com/OMpimQb"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> -->
+					<!-- <iframe src="https://imgur.com/OMpimQb/embed" width="320" height="300" scrolling="no" style="border:none;"></iframe> -->
+				</div>
+				<div class="grid-3">
+					<h1>Project Spotlight - MassEmail</h1>
+					<p>A locally hosted .NET application which loops through Excel datasets to send emails to specific rows which meet parameters set by user. Written in C#</p>
+					<a href="https://github.com/MatthewFBullock/MassEmail">View Project on Github</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="spotlight-2">
+		<div class="container">
+			<div class="row">
+				<div class="grid-7">
+					<video class="spotlight-video" autoplay width="320" height="240" loop muted>
+					<source src="img/cows.mp4" type="video/mp4">
+					Your browser does not support this video tag
+					</video>
+					<!-- <img src="img/spotlight.jpg"> -->
+				</div>
+				<div class="grid-7">
+					<h1>Project Spotlight</h1>
+					<p>Give a brief description of what this project is and what role you played. It can also be helpful to include a link</p>
+					<a href="#">View Project on Github</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="spotlight-3">
 		<div class="container">
 			<div class="row">
 				<div class="grid-3">
-					<img src="img/spotlight.jpg">
+					<video class="spotlight-video" autoplay width="320" height="240" loop muted>
+					<source src="img/skateboard.mp4" type="video/mp4">
+					Your browser does not support this video tag
+					</video>
+					<!-- <img src="img/spotlight.jpg"> -->
 				</div>
 				<div class="grid-3">
 					<h1>Project Spotlight</h1>
 					<p>Give a brief description of what this project is and what role you played. It can also be helpful to include a link</p>
-					<a href="#">View Project</a>
+					<a href="#">View Project on Github</a>
 				</div>
 			</div>
 		</div>
@@ -187,4 +237,21 @@
 	</div><!-- End Container -->
 	
 </body>
+
+<script type="text/javascript">
+	$(function(){
+		$('video').each(function(){
+    		if ($(this).is(":in-viewport")) {
+        $(this)[0].play();
+   		} else {
+        $(this)[0].pause();
+    		}
+		});
+	});
+	
+	
+	// var headshot = document.getElementById('headshot');
+	// $(headshot).fadeIn().slideUp('slow');
+		
+</script>
 </html>
