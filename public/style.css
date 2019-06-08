@@ -93,6 +93,15 @@ header p {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 522px){
+  header h1{
+    white-space: nowrap;
+  }
+  header p{
+    white-space: nowrap;
+  }
+}
+
 section h1 {
   font-size: 1.8em;
   line-height: 1em;
