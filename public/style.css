@@ -61,6 +61,10 @@ header {
   height: 500px;
  
 }
+.container-header{
+  position: relative;
+  text-align: center;
+}
 
 header h1 {
   color: white;
@@ -70,8 +74,9 @@ header h1 {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: absolute;
-  top: 390px;
-  right: 160px;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: 700;
 }
 
@@ -83,8 +88,9 @@ header p {
   opacity: .9;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: absolute;
-  top: 420px;
-  right: 164px
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section h1 {
@@ -121,11 +127,12 @@ footer hr {
   
   header h1 {
     font-size: 3.2em;
-    top: 540px;
+    /* top: 50%;
+    right: 50%; */
   }
   
   header p {
-    top: 530px;
+    top: 94%;
     font-size: 1.5em;
   }
 }
