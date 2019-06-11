@@ -78,6 +78,7 @@ header h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 header p {
@@ -91,15 +92,7 @@ header p {
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 522px){
-  header h1{
-    white-space: nowrap;
-  }
-  header p{
-    white-space: nowrap;
-  }
+  white-space: nowrap;
 }
 
 section h1 {
@@ -302,6 +295,11 @@ footer hr {
   margin-top:  -15px;
 }
 
+.spotlight-video{
+  width: auto;
+  height: 22em;
+}
+
 /* Spotlight-1 */
 .spotlight-1 {
   background-color: #f3e2d8;
@@ -346,7 +344,7 @@ footer hr {
 
 @media screen and (min-width: 40em) {
   .spotlight-1 {
-    padding: 6em;
+    /* padding: 6em; */
     text-align: left;
   }
   
@@ -454,7 +452,7 @@ footer hr {
 
 @media screen and (min-width: 40em) {
   .spotlight-3 {
-    padding: 6em;
+    /* padding: 6em; */
     text-align: left;
   }
   
