@@ -122,6 +122,7 @@ footer hr {
   text-align: center;
 }
 
+
 @media screen and (min-width: 50em) {
   header {
     height: 700px;
@@ -296,8 +297,8 @@ footer hr {
 }
 
 .spotlight-video{
-  width: auto;
-  height: 22em;
+  width: 100%;
+  height: auto;
 }
 
 /* Spotlight-1 */
