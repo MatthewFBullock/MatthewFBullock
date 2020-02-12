@@ -1,7 +1,7 @@
 // import $ from 'jquery';
 // import 'is-in-viewport';
 
-$(function(){
+$(function () {
     // $('video').each(function(){
     //     if ($(this).is(":in-viewport")) {
     // $(this)[0].play();
@@ -10,9 +10,6 @@ $(function(){
     //     }
     // });
     // $('h1:in-viewport').css('background-color', 'red');
+    //$("#headshot").hide().slideDown('slow');
 
-    var headshot = document.getElementById('headshot');
-    $(headshot).hide().slideDown('slow');
-    
-    
 });

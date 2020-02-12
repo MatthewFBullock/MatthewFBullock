@@ -33,8 +33,42 @@ p {
 img {
   max-width: 100%;
 }
+
+
+/* Debate keeping this webkit shit when you're looking at it next */
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
 #headshot{
   position: relative;
+  animation: normal;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
 }
 
 hr {
